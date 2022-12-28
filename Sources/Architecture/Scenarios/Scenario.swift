@@ -47,7 +47,7 @@ open class Scenario: Hashable {
     
     // This method performs the necessary actions to run the scenario.
     // Can be overridden in a subclass to add additional actions.
-    public func start() {
+    open func start() {
         // By default this method is empty.
         // It can be overridden in a subclass to add additional actions.
         // For example: Present/Push view controllers, Setup needed managers.
@@ -55,7 +55,7 @@ open class Scenario: Hashable {
     
     // This method performs the necessary actions to stop the script.
     // Can be overridden in a subclass to add additional actions.
-    public func stop() {
+    open func stop() {
         
     }
     
