@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public class InitialScenario: Scenario {
+open class InitialScenario: Scenario {
     
     public private(set) var window: UIWindow
     

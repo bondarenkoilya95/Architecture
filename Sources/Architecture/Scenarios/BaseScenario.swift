@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public class BaseScenario: Scenario {
+open class BaseScenario: Scenario {
     
     public private(set) weak var rootViewController: UIViewController?
     

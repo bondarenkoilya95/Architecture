@@ -17,18 +17,18 @@ public protocol ScenarioDelegate: AnyObject {
     func didCancel(scenario: Scenario)
 }
 
-public extension ScenarioDelegate {
+extension ScenarioDelegate {
     
-    func didComplete(scenario: Scenario) {
+    public func didComplete(scenario: Scenario) {
         print("Did complete scenario: \(scenario)")
     }
     
-    func didCancel(scenario: Scenario) {
+    public func didCancel(scenario: Scenario) {
         print("Did cancel scenario: \(scenario)")
     }
 }
 
-public class Scenario: Hashable {
+open class Scenario: Hashable {
     
     private var identifier: String
     
